@@ -5,17 +5,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <script src="JS/at.js"></script>
+        <style>
+            body{
+                text-align: center;
+                margin-top: 10%;
+                background-color: lavender;
+            }
+            input{
+                border-radius: 10px;
+                background-color: rgb(218, 192, 242);
+            }
+            h3{
+                font-family: sans-serif;
+            }
+            button{
+                border-radius: 10px;
+                background-color: rgb(87, 59, 113);
+                color: white;
+            }
+            p{
+                font-size: 20px;
+            }
+            label{
+                font-size: 17px;
+            }
+        </style>
     </head>
     <body>
+        <h3>Cálculo total de aulas</h3>
         <div>
-            <label>Numero 01:</label>
-            <input type="text" name="n_1" id="n_1" value=" "> 
+            <label>Horas</label>
+            <input type="number" id="n_1">
         </div>
         <div>
-            <label>Numero 02:</label>
-            <input type="text" name="n_2" id="n_2"> 
+            <label>Aulas</label>
+            <input type="number" id="n_2">
         </div>
-        <button onclick="soma()">=</button>
-        <p> </p>
+        <button onclick="aula()">Total geral</button>
+        <p id="total"></p>
+
+        <h3>Digite dois números para deixar em ordem crescente</h3>
+        <input type="number" id="n1">
+        <input type="number" id="n2">
+        <button id="bnum" onclick="cres()">Resultado</button>
+        <p id="texto"></p>
+
+        <h3>Digite três números para deixar em ordem crescente</h3>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <input type="number" id="num3">
+        <button onclick="ordem()">Resultado</button>
+        <p id="text"> </p>
     </body>
 </html>
